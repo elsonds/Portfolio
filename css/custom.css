@@ -1640,6 +1640,16 @@ body.primary-button-style-outline .header-menu.light-bold .header-menu-cta a {
     src: url("../fonts/grab-community.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "SF Pro Display Regular";
+    src: url("../fonts/sf-pro-display-cufonfonts-webfont/SFPRODISPLAYREGULAR.woff") format('truetype');
+}
+
+@font-face {
+    font-family: "SF Pro Display Medium";
+    src: url("../fonts/sf-pro-display-cufonfonts-webfont/SFPRODISPLAYMEDIUM.woff") format('truetype');
+}
+
 
 /* Olive Styles*/
 
@@ -1892,14 +1902,13 @@ td, th {
 }
 
 .two-column-grid {
-    border-radius: 6px;
+    border-radius: 16px;
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     align-items: center;
     grid-column-gap: 48px;
     grid-row-gap: 24px;
-    width: 1000px;
-    margin: 0 auto;
+    width: 1200px;
     max-width: 100%
 }
 
@@ -2086,12 +2095,11 @@ h6 {
 }
 
 p {
-    font-family: Acumin Pro, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    color: #8f9ba8;
+    font-family: "SF Pro Display Medium";
     margin-top: 0;
     margin-bottom: 0;
-    font-size: .9em;
-    line-height: 1.8em
+    font-size: 48px;
+    line-height: 60px;
 }
 
 p + p {
@@ -2241,14 +2249,14 @@ figcaption a {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #161618;
+    background-color: #000000;
     transition: all .3s;
     padding: 0 10px
 }
 
 .nav-container {
-    width: 1000px;
-    margin: 0 auto;
+    width: 1200px;
+    margin: 0px 286px;
     max-width: 100%;
     -ms-flex-pack: justify;
     -ms-flex-wrap: wrap;
@@ -2270,7 +2278,7 @@ figcaption a {
 .name {
     cursor: pointer;
     opacity: 1;
-    font-size: 22px;
+    font-size: 24px;
     color: #e9edea;
     margin-bottom: 2px
 }
@@ -2294,19 +2302,19 @@ figcaption a {
 .active {
     padding-bottom: 3px;
     opacity: 1 !important;
-    color: #e5afa7 !important;
     text-decoration: none !important;
-    border-bottom: 1px solid #e5afa7;
+    border-bottom: 2px solid;
     font-weight: 600
 }
 
 .links a {
+    font-family: "SF Pro Display Medium";
     user-select: none;
     text-decoration: none;
     opacity: .5;
-    margin-right: 25px;
-    color: #8f9ba8;
-    font-size: .8em;
+    margin-right: 44px;
+    color: #c4c4c4;
+    font-size: 24px;
     font-weight: 400;
     transition: .3s
 }
@@ -2473,7 +2481,7 @@ html {
 body {
     overflow-x: hidden;
     background: #161618;
-    font-family: Acumin Pro, sans-serif;
+    font-family: "SF Pro Display Regular";
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -2500,7 +2508,7 @@ img {
 }
 
 video {
-    background: #161618;
+    background: #000000;
     display: block;
     border-radius: 6px
 }
@@ -2619,7 +2627,7 @@ video {
     pointer-events: none;
     height: 90vh;
     width: 100vw;
-    background-color: #161618;
+    background-color: #000000;
     color: #e9edea !important;
     display: flex;
     justify-content: center;
@@ -2656,7 +2664,7 @@ video {
 }
 
 .content {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
     max-width: 100%;
     animation: .6s ease-out 0s 1 fadeInAnimation;
@@ -3885,11 +3893,11 @@ pre {
 }
 
 .project-thumbnail {
-    border-radius: 6px 0 0 6px
+    border-radius: 16px 0 0 16px
 }
 
 .project-grid-description {
-    margin: 96px
+    margin: 0 36px 0 36px;
 }
 
 @media (max-width: 992px) {
@@ -17118,7 +17126,7 @@ h1, h2, h3, h4 {
 }
 
 .sqsrte-large, p, .sqsrte-small {
-    margin: 1rem 0
+    /* margin: 1rem 0; */
 }
 
 .announcement-bar-font {
@@ -31809,7 +31817,7 @@ main .page-section:first-child {
 }
 
 body {
-    background-color: #111217;
+    background-color: #000000;
     color: #fff
 }
 
